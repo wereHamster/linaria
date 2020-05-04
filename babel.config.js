@@ -2,6 +2,9 @@ module.exports = {
   presets: ['@babel/preset-typescript'],
   plugins: ['@babel/plugin-proposal-class-properties'],
   env: {
+    esm: {
+      plugins: ['babel-plugin-add-import-extension'],
+    },
     legacy: {
       presets: [
         [
